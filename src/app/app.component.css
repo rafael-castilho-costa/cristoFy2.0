@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('../assets/img/Visitantes.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.login-container {
+    width: 70vh;
+    height: 70vh;
+    padding: 2em;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    width: 140px; 
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-area {
+    position: relative;
+    background-color: transparent;
+    display: inline-table;
+
+}
+.input-area input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    background-color: rgba(253, 250, 250, 0.4);
+    
+}
