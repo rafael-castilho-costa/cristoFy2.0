@@ -21,31 +21,20 @@
 <body>
     <div class="login-container">
         <div class="logo-container">
+            <!---->
+        </div>
+        <form method="post" class="formLogin">
             <img src='../assets/img/logo-IEAD.png' alt="Logo Igreja Assembleia de Deus Missão" class="logo">
-        </div>
-        <!--Login do Usuário-->
-        <div class="input-group">
-            <label for="login-input">Login</label>
-            <div class="input-area">
-              <input type="text" id="" placeholder="Login">
-            </div>
-        </div>
-         <!--Senha do Usuário-->
-        <div class="input-group">
-            <label for="password-input">Senha</label>
-            <div class="input-area">
-              <input type="password" id="" placeholder="Senha">
-            </div>
-        </div>
-        <!--Link Esqueci Minha Senha-->
-        <div class="password-reset">
-            <a href="" id="">Esqueci minha Senha</a>
-        </div>
-        <!--Ações de Login-->
-        <div class="login-actions">
-            <button id="" disabled>Acessar</button>
-            <a href="" id="">Não consigo fazer</a>
-        </div>
+            <p>Digite os seus dados de acesso:</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true">
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua Senha">
+            <a href="/">Esqueci minha senha</a>
+            <button type="button" value="Acessar" class="btn">Acessar</button>
+           
+        </form>
+        
     </div>
   
     <!-- JavaScript Files -->

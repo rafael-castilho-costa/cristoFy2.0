@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +17,16 @@ body {
 }
 
 .login-container {
-    width: 70vh;
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding: 2em;
     background-color: rgb(255, 255, 255, 0.3);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo-container{
@@ -33,22 +38,86 @@ body {
 .logo {
     max-width: 100%;
     height: auto;
-    width: 140px; 
+    width: 90px; 
+    margin: auto;
 }
-.input-group {
-    margin-bottom: 15px;
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 1px;
+    align-items: center;
 }
-.input-area {
-    position: relative;
-    background-color: transparent;
-    display: inline-table;
 
+.formLogin p {
+   display: inline-block;
+   font-size: 14px;
+   color: #ffff;
+   margin-bottom: 25px;
 }
-.input-area input {
-    width: 100%;
-    padding: 10px;
-    padding-right: 30px;
-    box-sizing: border-box;
-    background-color: rgba(253, 250, 250, 0.4);
+
+.formLogin input {
+    padding: 12px;
+    font-size: 14px;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+.formLogin input:focus {
+    border: 1px solid red;
+}
+
+.formLogin label {
+    color: #ffff;
     
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formLogin a{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: #ffff;
+    transition: all linear 160ms;
+    text-decoration: none;
+}
+.formLogin a:hover {
+    color: red;
+    font-size: 14px;
+}
+.button {
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+    
+    
+}
+.btn {
+    border: 0;
+    padding: 9px 50px;
+    color: #ffff;
+    background-color: rgba(200, 145, 22, 0.4);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all linear 160ms;
+    cursor: pointer;
+    border-radius: 10px;
+   
+}
+
+.btn:hover {
+    background-color: #C89116;
+    transform: scale(1.05);
 }
