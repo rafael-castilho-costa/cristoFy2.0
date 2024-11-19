@@ -121,3 +121,9 @@ body {
     background-color: #C89116;
     transform: scale(1.05);
 }
+
+.footer {
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+}
