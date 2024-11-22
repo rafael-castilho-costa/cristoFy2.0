@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { headerComponent } from './header/header.component';
+import { fullComponent } from './full/full.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component:headerComponent,
+    component:fullComponent,
     children: [
       {
         path: 'home',
@@ -16,10 +16,6 @@ export const routes: Routes = [
         path:'login',
         component:LoginComponent
       },
-      {
-        path:'header',
-        component:headerComponent
-      }
     ],
   },
 ];
