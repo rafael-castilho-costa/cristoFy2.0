@@ -1,3 +1,35 @@
-.teste {
-  color: red;
+.mat-sidenav-container {
+  height: 100vh;
+}
+.mat-toolbal {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.custom-icon-button {
+  color: white;
+  border: none;
+  background-color: transparent !important;
+}
+.custom-icon-button:hover {
+  color: black;
+
+}
+
+
+.mat-nav-list mat-icon {
+  margin-right: 8px;
+}
+
+.mat-sidenav {
+  width: 250px;
+  background: #f4f4f4;
+}
+.mat-list-item:hover {
+  background: #e0e0e0;
+}
+
+.mat-icon-button {
+  color: #fff;
 }

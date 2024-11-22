@@ -1,0 +1,27 @@
+<mat-sidenav-container>
+   <!-- Sidenav -->
+   <mat-sidenav #sidenav mode="side" [(opened)]="isOpened">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/home">Home</a>
+      <a mat-list-item routerLink="/visitantes">Visitantes</a>
+      <a mat-list-item routerLink="/agenda">Agenda</a>
+      <a mat-list-item routerLink="/configuracoes">Configurações</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Header and Main Content -->
+  <mat-sidenav-content>
+    <!-- Toolbar -->
+    <mat-toolbar color="primary" style="background-color: #1976d2;">
+      <button mat-icon-button (click)="sidenav.toggle()" class="custom-icon-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span></span>
+    </mat-toolbar>
+
+    <!-- Main Content -->
+    <div style="padding: 16px;">
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
