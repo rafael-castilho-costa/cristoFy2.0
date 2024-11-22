@@ -65,6 +65,14 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+.error-mensage {
+  color: #ccc;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-right: 150px;
+}
+
 .formLogin input:focus {
     border: 0px solid red;
 }
