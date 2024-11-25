@@ -6,9 +6,18 @@
   align-items: center;
   color: #fff;
   padding: 0 16px;
+  flex-direction: row;
+  box-sizing: border-box;
 }
 button[mat-icon-button] {
   color: white;
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 25px;
+  border-radius: 50%;
 }
 
 .mat-menu {
@@ -16,6 +25,7 @@ button[mat-icon-button] {
 }
 .mat-icon  {
  color: red;
+
 }
 .custom-icon-button {
   color: white;
@@ -47,4 +57,11 @@ button[mat-icon-button] {
   color: white;
   background-color: transparent !important;
   border: none;
+}
+
+.logo-IEAD {
+  max-width: 100%;
+  height: auto;
+  width: 90px;
+  margin-top: 13px;
 }
