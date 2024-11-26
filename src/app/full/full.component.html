@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" style="background-color: #004AAD;">
+<mat-toolbar color="primary" style="background-color: #255291;">
   <button mat-icon-button (click)="sidenav.toggle()" class="custom-icon-button">
     <mat-icon style="color: aliceblue;">menu</mat-icon>
   </button>
@@ -39,22 +39,22 @@
 
   <!-- Sidenav -->
    <mat-sidenav #sidenav mode="side" [(opened)]="isOpened">
-    <mat-nav-list>
+    <mat-nav-list class="nav-menu" style="justify-content: center;">
       <a mat-list-item routerLink="/home">
-        <mat-icon matListIcon class="mat-18">home</mat-icon>
-        Home
+        <mat-icon matListIcon class="mat-18 custom-icon">home</mat-icon>
+        <span class="name">Home</span>
       </a>
       <a mat-list-item routerLink="/membros">
-        <mat-icon matListIcon class="mat-18">group</mat-icon>
-        Membros
+        <mat-icon matListIcon class="mat-18 custom-icon">group</mat-icon>
+        <span class="name">Membros</span>
       </a>
       <a mat-list-item routerLink="/visitantes">
-        <mat-icon matListIcon class="mat-18">person_add</mat-icon>
-        Visitantes
+        <mat-icon matListIcon class="mat-18 custom-icon">person_add</mat-icon>
+        <span class="name">Visitantes</span>
       </a>
       <a mat-list-item routerLink="/agenda">
-        <mat-icon matListIcon class="mat-18">event</mat-icon>
-        Agenda
+        <mat-icon matListIcon class="mat-18 custom-icon">event</mat-icon>
+        <span class="name">Agenda</span>
       </a>
     </mat-nav-list>
   </mat-sidenav>
