@@ -93,4 +93,9 @@ button[mat-icon-button] {
 .name {
   margin: 20px;
   color: #484c4c;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ajust {
+  align-items: center;
 }

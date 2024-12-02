@@ -6,8 +6,18 @@ import { fullComponent } from './full/full.component';
 export const routes: Routes = [
   {
     path: '',
-    component:fullComponent,
+    //component:fullComponent,
+
     children: [
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full',
+      },
+      {
+        path:'full',
+        component: fullComponent,
+      },
       {
         path: 'home',
         component: HomeComponent,
