@@ -6,19 +6,19 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { Router } from '@angular/router';
-
+import { RouterOutlet } from "@angular/router";
 
 
 @Component({
   standalone:true,
-  selector: 'app-header',
+  selector: 'app-full',
   imports: [MatSlideToggleModule, MatSidenavModule,  MatToolbarModule,
-    MatIconModule, MatListModule, MatMenuModule],
+    MatIconModule, MatListModule, MatMenuModule, RouterOutlet],
   templateUrl:'full.component.html',
   styleUrls: ['full.component.css']
 
 }) export class fullComponent {
-    isOpened = false;
+    isOpened = true;
     constructor(private router: Router){}
     toggleSidenav() {
       const sidenav: any = document.querySelector('mat-sidenav');
