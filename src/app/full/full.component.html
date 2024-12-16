@@ -1,0 +1,73 @@
+<mat-toolbar color="primary" style="background-color: #255291;">
+  <button mat-icon-button (click)="sidenav.toggle()" class="custom-icon-button">
+    <mat-icon style="color: aliceblue;">menu</mat-icon>
+  </button>
+  <div>
+    <img class="logo-IEAD" src="../../assets/img/logo-IEAD.png">
+  </div>
+
+  <span style="flex: 1 1 0%; box-sizing: border-box;"></span>
+
+  <span class="position-item-header">
+    <a mat-list-item routerLink="/notificações">
+      <mat-icon matListIcon class="mat-18" style="color: white;">notifications</mat-icon>
+    </a>
+  </span>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="custom-icon-button">
+    <mat-icon style="color: white;">account_circle</mat-icon>
+  </button>
+
+  <span>
+    <mat-menu #menu="matMenu">
+
+      <button mat-menu-item routerLink="/profile">
+        <mat-icon>person</mat-icon>
+        <span>Perfil</span>
+      </button>
+
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Sair</span>
+      </button>
+
+    </mat-menu>
+  </span>
+
+</mat-toolbar>
+<mat-sidenav-container>
+
+  <!-- Sidenav -->
+   <mat-sidenav #sidenav mode="side" [(opened)]="isOpened">
+    <mat-nav-list class="nav-menu" style="justify-content: center;">
+      <a mat-list-item href="/home">
+        <mat-icon matListIcon class="mat-18 custom-icon">home</mat-icon>
+        <span class="name">Home</span>
+      </a>
+      <a class="ajust" mat-list-item href="/membros">
+        <mat-icon matListIcon class="mat-18 custom-icon">group</mat-icon>
+        <span class="name">Membros</span>
+      </a>
+      <a mat-list-item href="/visitantes">
+        <mat-icon matListIcon class="mat-18 custom-icon">person_add</mat-icon>
+        <span class="name">Visitantes</span>
+      </a>
+      <a mat-list-item href="/agenda">
+        <mat-icon matListIcon class="mat-18 custom-icon">event</mat-icon>
+        <span class="name">Agenda</span>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Header and Main Content -->
+  <mat-sidenav-content>
+    <!-- Toolbar -->
+
+
+    <!-- Main Content -->
+    <div style="padding: 16px;">
+    <router-outlet></router-outlet>
+
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

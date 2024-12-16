@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -49,6 +50,19 @@ export class AgendaComponent implements OnInit {
 
 
 
+=======
+
+@Component({
+  selector: 'app-agenda',
+  templateUrl: './agenda.component.html',
+  styleUrls: ['./agenda.component.css']
+})
+export class AgendaComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+>>>>>>> master
   }
 
 }
