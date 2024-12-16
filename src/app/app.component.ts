@@ -7,7 +7,7 @@ import { fullComponent } from "./full/full.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule, CommonModule, MatSlideToggleModule, fullComponent],
+  imports: [RouterOutlet, ReactiveFormsModule, CommonModule, MatSlideToggleModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html'
 })
