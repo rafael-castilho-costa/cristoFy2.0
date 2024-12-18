@@ -3,7 +3,10 @@
   padding: 32px;
   background-color: #fff;
   border-radius: 8px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .container-header {
@@ -18,6 +21,7 @@
   border-radius: 8px;
   overflow: hidden;
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .calendario {
@@ -25,6 +29,29 @@
   margin-top: 10px;
   grid-template-columns: repeat(7, 1fr);
   text-align: center;
+  width: 90%;
+}
+
+.dia {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.dia-semana {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  align-self: center;
+  padding: 15px;
+}
+
+.data-dia {
+  font-size: 24px;
+  color: #777;
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 .calendario div {

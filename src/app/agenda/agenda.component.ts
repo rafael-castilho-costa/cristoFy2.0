@@ -12,7 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 export class AgendaComponent implements OnInit {
 
   dataAtual: Date = new Date(); // Data Atual
-  diasCalendario: Date[] = []; // Array para armazenar os dias do caledário
+  diasCalendario: { data: Date; diaSemana: string}[] = []; // Array para armazenar os dias do caledário e Atualiza o tipo
+
 
   ngOnInit() {
     this.construirCalendario(); // Chama a função ao inicializar o componente
@@ -24,6 +25,7 @@ export class AgendaComponent implements OnInit {
 
     const primeiroDiaDaSemana = 1; // Segunda-feira (0= domingo)
     const ultimoDiaDaSemana = 0; //Domingo
+
 
     // Define o primeiro dia visível no calendário
     const dataInicial = new Date(ano, mes, 1);
@@ -44,11 +46,25 @@ export class AgendaComponent implements OnInit {
       data <= dataFinal;
       data.setDate(data.getDate() + 1)
     ) {
-      this.diasCalendario.push(new Date(data.getTime())); //Adiciona uma cópia da data ao array
+      this.diasCalendario.push({
+        data: new Date(data.getTime()),
+        diaSemana: this.obterDiaSemana(data.getDay()),
+      }); //Obtém o nome do dia da semana
+
     }
 
 
+  }
 
+  obterDiaSemana(dia: number): string {
+    const diasSemana = ['Domingo', 'Segunda-Feira', 'Terça-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira','Sábado'];
+    return diasSemana[dia];
+  }
+
+  alterarMes(offsetMes: number) {
+    this.dataAtual.setMonth(this.dataAtual.getMonth()+ offsetMes);
+    this.dataAtual = new Date(this.dataAtual.getTime());
+    this.construirCalendario();
   }
 
 }
