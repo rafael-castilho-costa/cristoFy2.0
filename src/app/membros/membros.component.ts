@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import {MatToolbar} from "@angular/material/toolbar";
 
 @Component({
   standalone: true,
   selector: 'app-membros',
-  imports:[MatIconModule],
+  imports: [MatIconModule, MatToolbar],
   templateUrl: './membros.component.html',
   styleUrls: ['./membros.component.css']
 })
