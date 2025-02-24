@@ -11,8 +11,13 @@
           <label for="password">Senha</label>
           <input type="password" placeholder="Digite sua Senha" formControlName="password">
           <small *ngIf="formControls['password'].touched && formControls['password'].hasError('required')" class="error-mensage">A Senha é obrigatória.</small>
-          <a href="/">Esqueci minha senha</a>
           <button [disabled]="form.invalid" type="button" value="Acessar" class="btn" (click)="login()">Acessar</button>
+          <div class="authcasd">
+            <a href="/">Esqueci minha senha</a>
+            <a href="/">Cadastrar</a>
+          </div>
+
+
       </form>
 
   </div>

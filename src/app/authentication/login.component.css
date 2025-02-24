@@ -38,7 +38,7 @@
 .formLogin {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 25px;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
     gap: 1px;
     align-items: center;
@@ -131,4 +131,9 @@
     color: white;
     margin-top: 25px;
     text-align: center;
+}
+
+.authcasd{
+display: contents;
+
 }
